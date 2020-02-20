@@ -9,5 +9,5 @@ from django.views.generic import CreateView
 
 class SignUpView(CreateView):
     form_class = UserCreationForm
-    success_url = reverse_lazy('login')
-    template_name = 'signup.html'
+    success_url = reverse_lazy('signup')
+    template_name = 'registration/signup.html'
